@@ -1,3 +1,5 @@
 Shouter::Application.routes.draw do
-  match ':controller(/:action(/:id))(.:format)'
+	root :to => 'pages#home'
+
+  	match ':controller(/:action(/:id))(.:format)'
 end
